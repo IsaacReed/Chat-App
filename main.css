@@ -3,9 +3,16 @@ body {
 	font-family: arial, sans-serif;
 }
 h3 {
-	color: blue;
+	color: dodgerblue;
 	font-family: arial, sans-serif;
+	text-align: center;
 }
 h1 {
 	border-right: 24px;
-
+	color: white;
+	text-align: center;
+	font-size: 5em;
+background {
+		border-bottom: 24px;
+	 border-left: 24px;
+	}
