@@ -6,6 +6,12 @@ h3 {
 	color: dodgerblue;
 	font-family: arial, sans-serif;
 	text-align: center;
+	font-size: 2.5em;
+}
+h2 {
+	color:white;
+	font-size: 2em;
+	text-align: center;
 }
 h1 {
 	border-right: 24px;
@@ -15,4 +21,9 @@ h1 {
 background {
 		border-bottom: 24px;
 	 border-left: 24px;
+	}
+
+p {
+	color: white;
+	text-align: center;
 	}
