@@ -26,5 +26,13 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
+div {
+	height: 600px;
+	background-color: lightgray;
+	border-radius: 5px;
+}
 
+.pageInfo {
+padding: 10px;
+}
 
