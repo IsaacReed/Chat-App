@@ -3,7 +3,42 @@
 	<head>
 		<meta charset="utf8" />
 		<title>Messenger</title>
-		<link rel="stylesheet" type="text/css" href="homePage.css" />
+		<link rel="stylesheet" type="text/css" href="homePage.css" />					
+		<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+
+		<script src="firebase.js"></script>
+											
+		<!-- Neeed to import sign in widget from login page
+				 And change on successful login page, as well as defult page (to index)
+		-->
+			
+											
+		<!-- Copy from login page...-->
+		<div class="jumbotron">
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+		<div class="container">
+
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: "index.html",
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>'
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  
 	</head>
 
 <body>
@@ -13,9 +48,9 @@
   <li><a class="home" href="index.html">Home</a></li>
   <li><a href="messages.html">Messages</a></li>
   <li><a href="#about">About</a></li>
-  <li><a href="#logout" id="logout">Logout</a></li>
+  <li style="float:right"><div class="signInBut" id="firebaseui-auth-container"></div></li>
 </ul>
-<div>
+<div class="mainContainer">
 	<h1 class="pageInfo">Hello</h1>
 	<p class="pageInfo">Welcome to your new HTML project, at SourceLair.</p>
 	<p class="pageInfo">
@@ -24,6 +59,8 @@
 	<p class="pageInfo">
 A lacus vestibulum sed arcu. Mauris cursus mattis molestie a. Aenean vel elit scelerisque mauris. Nam libero justo laoreet sit. Eu volutpat odio facilisis mauris sit amet massa. Vitae turpis massa sed elementum. Dui faucibus in ornare quam viverra orci sagittis. Tristique risus nec feugiat in. Sed risus ultricies tristique nulla aliquet enim tortor at. Tortor id aliquet lectus proin. Accumsan lacus vel facilisis volutpat est velit.
 	</p>
+	
+	
 </div>
 
 </body>

@@ -1,0 +1,15 @@
+.sideBar {
+	width: 20%;
+	height: 800px;
+	float: left;
+	
+	background-color: lightgray;
+}
+
+.messages {
+	width: 80%;
+	height: 800px;
+	float: right;
+	
+	background-color: gray;
+}
