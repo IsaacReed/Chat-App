@@ -1,15 +1,26 @@
-.sideBar {
-	width: 20%;
+.sideBarLeft {
+	width: 10%;
 	height: 800px;
 	float: left;
 	
 	background-color: lightgray;
 }
 
+.SideBarRight {
+	width: 10%;
+	height: 800px;
+	float: left;
+	
+	background-color: lightgray;
+}
+	
+}
+
 .messages {
 	width: 80%;
 	height: 800px;
-	float: right;
+	opacity: 0;
+	left: 10%;
 	
 	background-color: gray;
 }
