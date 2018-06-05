@@ -3,16 +3,19 @@
 	<head>
 		<meta charset="utf8" />
 		<title>Messenger</title>
+		
 		<link rel="stylesheet" type="text/css" href="homePage.css" />
 		<link rel="stylesheet" type="text/css" href="messagePage.css" />
+		<script src ="./app.js"></script>
+		
 	</head>
 	<body>
 		<ul>
- 		 <li><a class="home" href="index.html">Home</a></li>
- 		 <li><a href="#messages">Messages</a></li>
- 		 <li><a href="#about">About</a></li>
- 		 <li><a href="#logout" id="logout">Log out</a></li>
-		</ul>
+  <li><a class="home" href="index.html">Home</a></li>
+  <li><a href="messages.html">Messages</a></li>
+  <li><a href="#about">About</a></li>
+  <li style="float:right"><div class="signInBut" id="firebaseui-auth-container"></div></li>
+</ul>
 		<div class="mainBody">								
 			<div class="messages">
 				<!-- Will contain all messages as  field -->

@@ -8,3 +8,11 @@
     messagingSenderId: "576770306956"
   };
   firebase.initializeApp(config);
+function myFunction() {
+    var x = document.getElementById("notsignedin");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
