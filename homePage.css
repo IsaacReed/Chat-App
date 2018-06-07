@@ -41,10 +41,11 @@ li a:hover:not(.active) {
 }
 
 .signInBut {
-	
+	display: block;	
 }
-.message {
-	padding: 10px;
-	align-content: center;
+.signoutbut {
+	display: block;
+	align-content: right;
 }
+
 
