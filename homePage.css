@@ -25,19 +25,26 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
+	padding: 200px;
 }
 
 .mainContainer {
 	height: 600px;
 	background-color: lightgray;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
-.pageInfo {
-padding: 10px;
+.mainBody {
+	padding: 10px;
+	background-color: dodgerblue;
+
 }
 
 .signInBut {
 	
+}
+.message {
+	padding: 10px;
+	align-content: center;
 }
 

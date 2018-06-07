@@ -4,9 +4,12 @@
 		<meta charset="utf8" />
 		<title>Messenger</title>
 		<script src ="./app.js"></script>
-		<link rel="stylesheet" type="text/css" href="homePage.css" />					
+		<link rel="stylesheet" type="text/css" href="homePage.css" />			
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+		
 		<script src="firebase.js"></script>
 											
 		<!-- Neeed to import sign in widget from login page
@@ -52,13 +55,19 @@
   <li style="float:right"><div class="signInBut" id="firebaseui-auth-container"></div></li>
 </ul>
 <div class="mainContainer">
+	<button onclick="myFunction()">Click Me</button>
+
+<div id="notsignedin">
+  You are not signed in
+</div>
 	<h1 class="pageInfo">Hello</h1>
 	<p class="pageInfo">Welcome to your new HTML project, at SourceLair.</p>
+	
 	<p class="pageInfo">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Vitae semper quis lectus nulla. At varius vel pharetra vel turpis nunc eget lorem dolor. Id porta nibh venenatis cras sed felis eget velit aliquet. Et sollicitudin ac orci phasellus egestas tellus. Quis vel eros donec ac odio. Iaculis eu non diam phasellus vestibulum lorem. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Vitae et leo duis ut diam quam nulla porttitor. Tortor pretium viverra suspendisse potenti. Id faucibus nisl tincidunt eget nullam non nisi. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Dignissim suspendisse in est ante in nibh. Velit dignissim sodales ut eu sem. Consectetur adipiscing elit ut aliquam purus. Ante in nibh mauris cursus mattis. Accumsan sit amet nulla facilisi morbi. Odio aenean sed adipiscing diam donec.
+		Lorem ipsum dolor sit amet. Odio aenean sed adipiscing diam donec.
 	</p>
 	<p class="pageInfo">
-A lacus vestibulum sed arcu. Mauris cursus mattis molestie a. Aenean vel elit scelerisque mauris. Nam libero justo laoreet sit. Eu volutpat odio facilisis mauris sit amet massa. Vitae turpis massa sed elementum. Dui faucibus in ornare quam viverra orci sagittis. Tristique risus nec feugiat in. Sed risus ultricies tristique nulla aliquet enim tortor at. Tortor id aliquet lectus proin. Accumsan lacus vel facilisis volutpat est velit.
+A lacus vestibulum sed arcu.
 	</p>
 	
 	

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf8" />
 		<title>Messenger</title>
+		
 		<link rel="stylesheet" type="text/css" href="homePage.css" />
 		<link rel="stylesheet" type="text/css" href="messagePage.css" />
 		<script src="firebase.js"></script>
@@ -12,18 +13,24 @@
 		
 		<!-- Add additional services you want to use -->
 		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+	
+		<!-- CHANGE THIS TO REALTIME DATABASE! -->
 		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
 	
 		<script src="authentication.js"></script>
+	
+		<script src ="./sendingmessages.js"></script>
+		<script src ="./firebase.js"></script>
+		
 	</head>
 	<body>
 		<ul>
- 		 <li><a class="home" href="index.html">Home</a></li>
- 		 <li><a href="#messages">Messages</a></li>
- 		 <li><a href="#about">About</a></li>
- 		 <li><a href="#logout" id="logout">Log out</a></li>
-		</ul>
-		<div class="mainBody" id="mainBody">								
+  <li><a class="home" href="index.html">Home</a></li>
+  <li><a href="messages.html">Messages</a></li>
+  <li><a href="#about">About</a></li>
+  <li style="float:right"><div class="signInBut" id="firebaseui-auth-container"></div></li>
+</ul>
+		<div class="mainBody">								
 			<div class="messages">
 				<!-- Will contain all messages as  field -->
 				<form>
