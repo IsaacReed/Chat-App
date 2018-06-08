@@ -15,7 +15,10 @@
 		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
 	
 		<!-- CHANGE THIS TO REALTIME DATABASE! -->
-		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+		<!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script> -->
+		
+		<!-- Below line configures realtime database (not cloud firestore database) -->
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
 	
 		<script src="authentication.js"></script>
 	
@@ -27,7 +30,7 @@
 		<ul>
   <li><a class="home" href="index.html">Home</a></li>
   <li><a href="messages.html">Messages</a></li>
-  <li><a href="#about">About</a></li>
+  <!-- <li><a href="#about">About</a></li> Do not need -->
   <li style="float:right"><div class="signInBut" id="firebaseui-auth-container"></div></li>
 </ul>
 		<div class="mainBody">								
@@ -35,7 +38,7 @@
 				<!-- Will contain all messages as  field -->
 				<form>
 					<input type="text" name="message" placeholder="Message">	
-					<input type="submit" value="Send">
+					<input type="submit" onclick="#SENDMESSAGE" value="Send">
 				</form>
 			</div>
 		</div>
