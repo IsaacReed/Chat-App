@@ -5,14 +5,11 @@
 <title> Chat-App </title>
 	<link rel="stylesheet" href="main.css">
 <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
 <script src="firebase.js"></script>
 	<!--Sign in widget code----------------------------------------------------->
 
-    <!-- *******************************************************************************************
-       * TODO(DEVELOPER): Paste the initialization snippet from:
-       * Firebase Console > Overview > Add Firebase to your web app. *
-       ***************************************************************************************** -->
-	<div class="jumbotron">
+  <div class="jumbotron">
 		<script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
 		<div class="container">
 
@@ -21,7 +18,7 @@
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
-        signInSuccessUrl: "index.html",
+        signInSuccessUrl: "https://y3wypf2x.apps.lair.io/home.html",
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
           firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -40,9 +37,10 @@
   <body>
     <!-- The surrounding HTML is left untouched by FirebaseUI.
          Your app may use that space for branding, controls and other customizations.-->
-		<body background="http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_blue_1920x1234.jpg">
+		<div class=container>
     <h1>Welcome to the Chat-App</h1>
     <h3 class="display-3">Welcome to the web browser version of the award-winning Chat-App</h3>
+		</div>
     <h2>Sign in with google to continue</h2>
 		<div id="firebaseui-auth-container"></div>
 

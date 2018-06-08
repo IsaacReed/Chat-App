@@ -8,3 +8,14 @@ function onSignIn(googleUser) {
 gapi.load("auth2", function(){
 	gapi.auth2.init();
 });
+function signOutUser() {
+  firebase.auth().signOut()
+  .then(function() {
+    console.log("user successfully signed out");
+    window.location.replace("index.html");
+  })
+  .catch(function(error) {
+    console.log("error signing out");
+  });
+}
+

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>Messenger</title>
+		<script src ="firebase.js"></script>
+		<script src ="google.js"></script>
+		<script src ="database.js"></script>
+		<link rel="stylesheet" type="text/css" href="homePage.css" />		
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+	</head>
+
+<body>
+
+
+<ul>
+  <li><a class="home" href="index.html">Home</a></li>
+  <li><a href="messages.html">Messages</a></li>
+  <li><a href="#about">About</a></li>
+	
+</ul>
+	
+
+<div class="jumbotron">
+	<button type ="error" valuex="Sign out" id="signoutbut">
+		
+	
+	<script type = "text/javascript">
+		function signOutUser() {
+  firebase.auth().signOut()
+  .then(function() {
+    console.log("user successfully signed out")
+    window.location.replace("index.html");
+  })
+  .catch(function(error) {
+    console.log("error signing out")
+  });
+}
+
+	</script>
+	</button>
+	<h1 class="pageInfo">Hello</h1>
+	<p class="pageInfo">Welcome to the home page of the Chat-app. Please use the menu at the top to navigate.</p>
+	
+	<p class="pageInfo">Lorem ipsum dolor sit amet. Odio aenean sed adipiscing diam donec.</p>
+	<p class="pageInfo">Lactating nibbas</p>
+	
+	
+</div>
+
+</body>
+</html>

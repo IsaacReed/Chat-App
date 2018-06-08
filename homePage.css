@@ -44,8 +44,7 @@ li a:hover:not(.active) {
 	display: block;	
 }
 .signoutbut {
-	display: block;
-	align-content: right;
+	size: 10%;
 }
 
 
